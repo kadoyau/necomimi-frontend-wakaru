@@ -1,4 +1,7 @@
 const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 const src = path.join(__dirname, 'src');
 const dist = path.join(__dirname, 'dist');
@@ -20,5 +23,14 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader'
     }]
-  }
+  },
+  devServer:{
+    contentBase: dist, // 開発サーバを立ち上げる参照ディレクトリ
+    hot: true, // hot-reloadを有効にします
+    port: 3000 // サーバを立ち上げるポート番号
+  },
+  plugins:[
+    new webpack.HotModuleReplacementPlugin(), // hot-reloadを有効にするプラグイン
+    new HtmlWebpackPlugin() // HtmlWebpackPlugin
+  ]
 };
