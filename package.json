@@ -9,5 +9,8 @@
     "babel-loader": "^8.0.0-beta",
     "webpack": "^4.13.0",
     "webpack-cli": "^3.0.8"
+  },
+  "scripts": {
+    "build:dev": "webpack --config webpack.config.js"
   }
 }
