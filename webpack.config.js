@@ -21,8 +21,14 @@ module.exports = {
     rules: [{
       test: /\.(js|jsx)$/,
       exclude: /node_modules/,
-      loader: 'babel-loader'
-    }]
+      enforce: 'pre', // babel-loaderより前に実行する
+      loader: 'eslint-loader',
+    },
+    {
+      test: /\.(js|jsx)$/,
+      exclude: /node_modules/,
+      loader: 'babel-loader',
+    }],
   },
   devServer: {
     contentBase: dist, // 開発サーバを立ち上げる参照ディレクトリ
