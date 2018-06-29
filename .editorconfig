@@ -1,0 +1,18 @@
+# 現在のディレクトリ位置をrootとする
+root = true
+# すべてのコードに対する設定
+[*]
+# 改行コード
+end_of_line = lf
+
+charset = utf-8
+# 行末尾の設定
+insert_final_newline = true
+trim_trailing_whitespace = true
+# インデント設定
+indent_style = space
+
+# 特定の拡張子に対する設定
+[*.{js,jsx,css,pcss,pug}]
+indent_size = 2
+
