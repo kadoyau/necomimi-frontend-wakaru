@@ -1,10 +1,11 @@
 export class Hello {
-  constructor(name){
+  constructor(name) {
+    this.name = name;
     this.say(name);
   }
 
-  say(name){
-    console.log(`Hello, ${name} World!`);
+  say() {
+    console.log(`Hello, ${this.name} World!`);
   }
 }
 export default new Hello('Akane-chan');
