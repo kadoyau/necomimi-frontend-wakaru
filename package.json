@@ -2,5 +2,8 @@
   "name": "necomimi-frontend-wakaru",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.0.0-beta.51"
+  }
 }
