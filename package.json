@@ -10,6 +10,7 @@
     "babel-loader": "^8.0.0-beta",
     "eslint": "^5.0.1",
     "eslint-config-airbnb": "^17.0.0",
+    "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.10.0",
@@ -20,7 +21,7 @@
   },
   "scripts": {
     "build:dev": "webpack --config webpack.config.js",
-    "lint:js":"eslint './src/js/*{js, jsx}'",
+    "lint:js": "eslint './src/js/*{js, jsx}'",
     "serve": "webpack-dev-server --config webpack.config.js"
   }
 }
