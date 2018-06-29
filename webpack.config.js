@@ -11,11 +11,11 @@ module.exports = {
   entry: path.resolve(src, 'js/index.js'), // ビルドを実行するファイルパス
   output: {
     filename: 'index.bundle.js', // 生成されるファイル名
-    path: dist // 生成先のディレクトリ
+    path: dist, // 生成先のディレクトリ
   },
   resolve: {
     modules: ['node_modules'], // import文のパス指定にnode_modulesを省略できるようにします
-    extensions: ['.js', '.jsx'] // .jsまたは.jsxの拡張子を省略できるようにします
+    extensions: ['.js', '.jsx'], // .jsまたは.jsxの拡張子を省略できるようにします
   },
   module: {
     rules: [{
@@ -24,13 +24,13 @@ module.exports = {
       loader: 'babel-loader'
     }]
   },
-  devServer:{
+  devServer: {
     contentBase: dist, // 開発サーバを立ち上げる参照ディレクトリ
     hot: true, // hot-reloadを有効にします
-    port: 3000 // サーバを立ち上げるポート番号
+    port: 3000, // サーバを立ち上げるポート番号
   },
-  plugins:[
+  plugins: [
     new webpack.HotModuleReplacementPlugin(), // hot-reloadを有効にするプラグイン
-    new HtmlWebpackPlugin() // HtmlWebpackPlugin
-  ]
+    new HtmlWebpackPlugin(), // HtmlWebpackPlugin
+  ],
 };
