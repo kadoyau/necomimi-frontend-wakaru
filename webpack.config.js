@@ -8,7 +8,7 @@ const dist = path.join(__dirname, 'dist');
 
 module.exports = {
   mode: 'development', // developmentモードで実行します
-  entry: path.resolve(src, 'js/index.js'), // ビルドを実行するファイルパス
+  entry: path.resolve(src, 'js/render.jsx'), // ビルドを実行するファイルパス
   output: {
     filename: 'index.bundle.js', // 生成されるファイル名
     path: dist, // 生成先のディレクトリ
