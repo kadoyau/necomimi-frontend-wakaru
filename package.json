@@ -6,6 +6,7 @@
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.51",
     "@babel/preset-env": "^7.0.0-beta.51",
+    "@babel/preset-react": "^7.0.0-beta.51",
     "babel-eslint": "^8.2.5",
     "babel-loader": "^8.0.0-beta",
     "babel-preset-flow": "^6.23.0",
@@ -29,5 +30,9 @@
     "flow": "flow",
     "prettier": "prettier --write './src/js/*.{js,jsx}'",
     "serve": "webpack-dev-server --config webpack.config.js"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   }
 }
