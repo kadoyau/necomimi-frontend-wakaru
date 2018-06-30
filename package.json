@@ -23,6 +23,7 @@
   "scripts": {
     "build:dev": "webpack --config webpack.config.js",
     "lint:js": "eslint './src/js/*{js, jsx}'",
+    "prettier": "prettier --write './src/js/*.{js,jsx}'",
     "serve": "webpack-dev-server --config webpack.config.js"
   }
 }
